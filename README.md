@@ -10,10 +10,11 @@ Have the enacted policies served to close benchmarks gaps previously attributed 
 ## Findings
 
 SAT and ACT scores do not necessarily track with property values, but low-median list price zip codes have fewer schools with high benchmarks. 
-<img src="../assets/scatter.png" height="60" width="60" >
-ACT scores have much higher distribution among schools in zip does with median list value greater than $1 million. 
-<img src="../assets/act.png" height="60" width="60" >
 
+![Scatter of ACT/SAT scores vs. Median Home List Price](assets/scatter.png)
+
+ACT scores have much higher distribution among schools in zip does with median list value greater than $1 million. 
+![Comparing ACT score distribution for schools in zip codes with mean list price less than and $1 million or more.](assets/act.png)
 
 ---
 ## Datasets Used: Provided Data  
