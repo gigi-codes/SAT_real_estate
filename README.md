@@ -17,6 +17,11 @@ ACT scores have much higher distribution among schools in zip does with median l
 ![Comparing ACT score distribution for schools in zip codes with mean list price less than and $1 million or more.](assets/act.png)
 
 ---
+# Process
+* I used [`realtor.py`](./code/realtor.py) to directly import data from site and created filtered `realtor.csv` to use in subsequent analyses. 
+* Cleaning and analyses are presented in [`project1.ipynb`](./code/project1.ipynb)
+
+---
 ## Datasets Used: Provided Data  
 
 * [`act_2019_ca.csv`](./data/act_2019_ca.csv): 2019 ACT Scores in California by School ([source](https://www.cde.ca.gov/ds/sp/ai) | [data dictionary]
@@ -29,11 +34,12 @@ ACT scores have much higher distribution among schools in zip does with median l
 * [`pubschls.xlsx`](./data/pubschls.xlsx): California Public School Codes & Addresses ([source](https://www.cde.ca.gov/ds/sp/ai/) | [data dictionary]
 * [`realtor.csv`](./data/realtor.csv): Home Sale List Prices by Zip ([source](https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv') | [data dictionary]
 
+> Data dictionaries and additional data information below.
+
 ---
+### Data Dictionaries
 
-## Data Dictionaries
-
-`act_2019_ca` DataFrame (source: https://www.cde.ca.gov/search/advsearch.asp)
+`act_2019_ca` from [cde.ca.gov](https://www.cde.ca.gov/search/advsearch.asp)
 
 | Col. Name  | DType     | Description |
 | ---------- | --------- | ----- |
@@ -53,7 +59,7 @@ ACT scores have much higher distribution among schools in zip does with median l
 | year       | object    | academic year of administration  |
 
 
-`sat_2019_ca` DataFrame (source: https://www.cde.ca.gov/search/advsearch.asp)
+`sat_2019_ca` from [cde.ca.gov](https://www.cde.ca.gov/search/advsearch.asp)
 | name      | dtype         | description |
 | --------- | ------------- | ----------- |
 | cds       | float64       | county/district/school code |
@@ -83,7 +89,7 @@ ACT scores have much higher distribution among schools in zip does with median l
 |year                   | object    | test-administered year|
 
 ---
-`realtor.csv` DataFrame (source: https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv)
+`realtor.csv` from [realtor.com](https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv)
 
 | Col. Name                 | DType     | Description |
 | ----------                | --------- | ----- |
